@@ -1,8 +1,10 @@
 # IDAPlugins
 
-## What is this
+## What Is This
 A repo storing all IDA Python scripts that I often use
 
+## How To Use
+Download the repo as zip, extract it to IDA's `/plugins` folder
 
 ## List of Scripts
 - PrintGUID.py - Prints out the GUID bytes pointed by the cursor

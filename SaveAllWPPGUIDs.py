@@ -49,7 +49,7 @@ class handler_class(idaapi.action_handler_t):
                             for addr, name in results:
                                 f.write(f"{name} at {addr:X}\n")
                                 guid = GUID.printGUID(addr)
-                                f.write(guid)
+                                f.write(guid + "\n")
                         ida_kernwin.msg(f"Output saved to: {save_path}\n")
                     except Exception as e:
                         ida_kernwin.msg(f"Failed to save output: {str(e)}\n")

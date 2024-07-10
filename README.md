@@ -1,11 +1,10 @@
 # IDAPlugins
 
 ## What Is This
-A repo storing all IDA Python scripts that I often use
+A repo storing all IDA Python scripts that I often use.
 
 ## How To Use
-Credit for [gaasedelen](https://github.com/gaasedelen)
-
+Credit to [gaasedelen](https://github.com/gaasedelen) for the installation steps
 
 
 1. From your disassembler's python console, run the following command to find its plugin directory:

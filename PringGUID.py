@@ -3,7 +3,8 @@ import ida_kernwin
 import idc
 import idaapi
 import idautils
-from lib.PringGUID import GUID
+from lib.GUID import GUID
+
 CONTEXT_MENU_PATH = 'Kiwi/'
 ITEM_NAME = 'PrintGUID'
 

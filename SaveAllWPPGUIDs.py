@@ -3,7 +3,7 @@ import ida_kernwin
 import idc
 import idautils
 import re
-from lib.PringGUID import GUID
+from lib.GUID import GUID
 
 CONTEXT_MENU_PATH = 'Kiwi/'
 ITEM_NAME = 'SearchWPP'

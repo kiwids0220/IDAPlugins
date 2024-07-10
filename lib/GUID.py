@@ -3,6 +3,7 @@ import ida_kernwin
 import idc
 import idaapi
 import idautils
+
 class GUID:
     def printGUID(ea):
         """

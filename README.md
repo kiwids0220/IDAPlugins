@@ -4,7 +4,22 @@
 A repo storing all IDA Python scripts that I often use
 
 ## How To Use
-Download the repo as zip, extract it to IDA's `/plugins` folder
+Credit for [gaasedelen](https://github.com/gaasedelen)
+
+
+
+1. From your disassembler's python console, run the following command to find its plugin directory:
+
+IDA Pro: 
+    ```
+    import idaapi, os; os.path.join(idaapi.get_user_idadir(), "plugins")
+    ```
+
+2. Copy the contents of this repository's /plugins/ folder to the listed directory.
+
+3. Restart your disassembler.
+
+The scripts are tested on IDA Pro 8.3
 
 ## List of Scripts
 - PrintGUID.py - Prints out the GUID bytes pointed by the cursor

@@ -5,7 +5,7 @@ import idautils
 import re
 
 CONTEXT_MENU_PATH = 'Kiwi/'
-ITEM_NAME = 'SearchWPP'
+ITEM_NAME = 'SaveAllSymbol'
 
 
 class handler_class(idaapi.action_handler_t):
@@ -14,18 +14,7 @@ class handler_class(idaapi.action_handler_t):
         This function searches the .rdata section for symbols with names like WPP_ followed by 32 hexadecimal characters.
         It prompts the user to choose whether to save the output to a file or print it out.
         """
-        # Find the .rdata section
-        rdata_start = None
-        rdata_end = None
-        for seg in idautils.Segments():
-            if idc.get_segm_name(seg) == '.rdata':
-                rdata_start = idc.get_segm_start(seg)
-                rdata_end = idc.get_segm_end(seg)
-                break
 
-        if rdata_start is None or rdata_end is None:
-            ida_kernwin.msg(".rdata section not found.\n")
-            return False
         # Search for symbols that match the pattern in the .rdata section
         results = []
         for name in idautils.Names():

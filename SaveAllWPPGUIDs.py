@@ -14,7 +14,7 @@ class handler_class(idaapi.action_handler_t):
         This function searches the .rdata section for symbols with names like WPP_ followed by 32 hexadecimal characters.
         It prompts the user to choose whether to save the output to a file or print it out.
         """
-        pattern = ida_kernwin.ask_str("", 0, "Enter Regex Pattern")
+        pattern = ida_kernwin.ask_str("", 0, "Enter Regex Pattern, \nLeave it empty if you want to use the default regex pattern")
         if not pattern:
             ida_kernwin.msg(r"Regex pattern not provided. Using the default pattern ^WPP_[0-9A-Fa-f]{32}\n")
             pattern = r'^WPP_[0-9A-Fa-f]{32}'

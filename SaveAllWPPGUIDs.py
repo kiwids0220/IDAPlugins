@@ -60,7 +60,7 @@ class handler_class(idaapi.action_handler_t):
                 ida_kernwin.msg("Found symbols:\n")
                 for addr, name in results:
                     ida_kernwin.msg(f"{name} at {addr:X}\n")
-      
+                    guid = GUID.printGUID(addr)
 
         return True
 

@@ -9,7 +9,6 @@ class GUID:
         """
         This function reads 16 bytes from the specified address and interprets them as a GUID.
         """
-        ea = idc.get_screen_ea()
 
         guid_bytes = idaapi.get_bytes(ea, 16)
         if not guid_bytes:
